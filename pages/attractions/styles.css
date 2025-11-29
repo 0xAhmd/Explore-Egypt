@@ -1,0 +1,175 @@
+/* Colors */
+:root {
+    --green: #1f8a4c;
+    --dark-green: #146238;
+    --light: #f7f7f7;
+    --gray: #555;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light); 
+    color: var(--gray);
+}
+
+
+
+h1 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin: 0 0 10px 0;
+}
+
+header p {
+    font-size: 1.1em;
+    margin: 0;
+    opacity: 0.95;
+}
+
+/* Typography */
+h2 {
+    font-family: 'Philosopher', sans-serif;
+    color: var(--dark-green);
+    font-size: 2em;
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    font-family: 'Philosopher', sans-serif;
+    color: var(--green);
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Philosopher', sans-serif;
+    color: var(--dark-green);
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+/* Container */
+
+
+/* Section Styles */
+.main-section {
+    margin-bottom: 60px;
+}
+
+.section-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    border-bottom: 3px solid var(--green);
+    margin-bottom: 30px;
+}
+
+/* Dividers */
+.divider {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.divider img {
+    width: 130px;
+    opacity: 0.6;
+}
+
+/* Attraction Cards */
+.attraction-card {
+    background-color: rgba(255, 250, 240, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+.attraction-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--dark-green), var(--green));
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    position: relative;
+    font-family: 'Cairo', sans-serif;
+    margin-top: 40px;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 15px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/bc/Egyptian_Border_Decoration.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+    .attractions-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2.8em;
+    }
+    
+    header p {
+        font-size: 1.2em;
+    }
+}
+
+
+
+/* Hero Section Specific Styles */
+.hero {
+    padding: 0 !important; /* Remove padding */
+    margin: 0; /* Ensure no margin */
+}
+
+/* Legacy class support (from old CSS files) */
+.title {
+    color: #5C6AC4;
+}
