@@ -1,0 +1,455 @@
+/* Colors - matching main styles.css */
+:root {
+    --green: #1f8a4c;
+    --dark-green: #146238;
+    --light: #f7f7f7;
+    --gray: #555;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../../assets/destinations/egypt-hero.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    color: #fff;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin: 15px 0 25px;
+    font-size: 18px;
+}
+
+/* Destinations Section */
+.destinations-section {
+    padding: 80px 5%;
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--green);
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Main Destination Card - Grand Egyptian Museum */
+.main-destination-card {
+    background: linear-gradient(135deg, #fff 0%, #f8fbf8 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(31, 138, 76, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    border: 3px solid var(--green);
+}
+
+.main-destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(31, 138, 76, 0.3);
+}
+
+.main-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--green), var(--dark-green));
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(31, 138, 76, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.main-card-img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.main-card-body {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 400px;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-green);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.main-subtitle {
+    color: var(--green);
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--green);
+}
+
+.main-description {
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.main-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.highlight-badge {
+    background: var(--green);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(31, 138, 76, 0.3);
+}
+
+.btn-main {
+    background: linear-gradient(135deg, var(--green), var(--dark-green));
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(31, 138, 76, 0.3);
+    align-self: flex-start;
+}
+
+.btn-main:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(31, 138, 76, 0.4);
+    color: #fff;
+}
+
+/* Destination Cards */
+.destination-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-green);
+    margin-bottom: 10px;
+}
+
+.destination-info {
+    color: var(--green);
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.card-body p {
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.highlights li {
+    background: var(--light);
+    color: var(--dark-green);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Featured Section */
+.featured-section {
+    padding: 80px 5%;
+    background: var(--light);
+}
+
+.featured-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-content {
+    padding: 30px;
+}
+
+.featured-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-green);
+    margin-bottom: 15px;
+}
+
+.featured-content p {
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--green);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--dark-green);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(31, 138, 76, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .featured-img {
+        height: 280px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .main-card-body {
+        padding: 30px;
+        min-height: auto;
+    }
+
+    .main-card-img {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .destinations-section,
+    .featured-section {
+        padding: 60px 3%;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-body h3 {
+        font-size: 20px;
+    }
+
+    .featured-content {
+        padding: 20px;
+    }
+
+    .featured-content h3 {
+        font-size: 24px;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .main-subtitle {
+        font-size: 16px;
+    }
+
+    .main-description {
+        font-size: 15px;
+    }
+
+    .main-card-body {
+        padding: 25px;
+    }
+
+    .main-badge {
+        top: 15px;
+        right: 15px;
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .main-card-img {
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .card-img {
+        height: 200px;
+    }
+
+    .featured-img {
+        height: 220px;
+    }
+
+    .main-title {
+        font-size: 22px;
+    }
+
+    .main-subtitle {
+        font-size: 14px;
+    }
+
+    .main-description {
+        font-size: 14px;
+    }
+
+    .main-card-body {
+        padding: 20px;
+    }
+
+    .main-badge {
+        top: 10px;
+        right: 10px;
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    .highlight-badge {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    .btn-main {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
