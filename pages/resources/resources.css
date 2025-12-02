@@ -46,6 +46,11 @@ body {
     line-height: 1.6;
 }
 
+/* Adjust spacing between hero and map section */
+.hero {
+    margin-bottom: 0 !important; /* Remove extra space */
+}
+
 /* Main Container */
 .container {
     max-width: 1200px;
