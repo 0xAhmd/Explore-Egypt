@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details - Discover Egypt</title>
+    <!-- Shared root stylesheet so header/footer match index.html -->
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- Page-specific styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Detail page styles -->
+    <link rel="stylesheet" href="detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Use the same header as index.html -->
+    <header>
+        <a href="../../index.html" class="logo">Discover Egypt</a>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../about-egypt/About.html">About</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="../attractions/attractions.html">Attractions</a>
+            <a href="#">Experiences</a>
+            <a href="../information/information.html">Information</a>
+            <a href="../information/information.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Detail Page Content -->
+    <div class="detail-hero" id="detailHero">
+        <div class="detail-hero-overlay"></div>
+        <div class="detail-hero-content">
+            <a href="destinations.html" class="back-button">
+                <span>←</span> Back to Destinations
+            </a>
+            <h1 id="detailTitle">Loading...</h1>
+            <p id="detailSubtitle"></p>
+        </div>
+    </div>
+
+    <div class="detail-container">
+        <div class="detail-content">
+            <div class="detail-image-section">
+                <img id="detailImage" src="" alt="" class="detail-main-image">
+            </div>
+
+            <div class="detail-text-section">
+                <div class="detail-description">
+                    <p id="detailDescription"></p>
+                </div>
+
+                <div class="detail-highlights" id="detailHighlights">
+                    <!-- Highlights will be populated by JavaScript -->
+                </div>
+
+                <div class="detail-info-box">
+                    <h3 id="detailInfoTitle">Key Attractions</h3>
+                    <ul id="detailInfoList">
+                        <!-- List items will be populated by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Use the same footer as index.html -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Explore-Egypt</h3>
+                <p>Your gateway to exploring Egypt.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3><a href="../../index.html">Home</a><a href="destinations.html">Destinations</a><a
+                    href="../attractions/attractions.html">Attractions</a>
+            </div>
+            <div>
+                <h3>Destinations</h3><a href="#cairo">Cairo</a><a href="#luxor">Luxor</a><a href="#aswan">Aswan</a>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@egypt.com</p>
+                <p>Phone: +20 123 456 789</p>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Discover Egypt. All Rights Reserved.</div>
+    </footer>
+
+    <script src="detail.js"></script>
+</body>
+
+</html>
+

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <!-- Page-specific styles -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Detail page styles -->
+    <link rel="stylesheet" href="detail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -25,7 +27,7 @@
             <a href="../about-egypt/About.html">About</a>
             <a href="destinations.html">Destinations</a>
             <a href="../attractions/attractions.html">Attractions</a>
-      <a href="../Experience/experience.html">Experiences</a>
+            <a href="#">Experiences</a>
             <a href="../information/information.html">Information</a>
             <a href="../information/information.html#contact">Contact</a>
         </nav>
@@ -47,153 +49,167 @@
             <!-- Grand Egyptian Museum - Main Event -->
             <div class="row g-4 mb-5">
                 <div class="col-12">
-                    <div class="main-destination-card">
-                        <div class="row g-0">
-                            <div class="col-lg-6">
-                                <img src="../../assets/destinations/grand-egyptian-museum.jpg"
-                                    alt="Grand Egyptian Museum" class="main-card-img">
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="main-card-body">
-                                    <h3 class="main-title">Grand Egyptian Museum</h3>
-                                    <p class="main-subtitle"><strong>World's Largest Archaeological Museum</strong> |
-                                        Giza, Egypt</p>
-                                    <p class="main-description">Experience the magnificent Grand Egyptian Museum, the
-                                        world's largest museum dedicated to a single civilization. Located near the
-                                        Pyramids of Giza, this architectural marvel houses over 100,000 artifacts,
-                                        including the complete collection from King Tutankhamun's tomb. Discover Egypt's
-                                        rich history spanning from the Predynastic Period to the Roman era.</p>
-                                    <div class="main-highlights">
-                                        <span class="highlight-badge">King Tutankhamun Collection</span>
-                                        <span class="highlight-badge">100,000+ Artifacts</span>
-                                        <span class="highlight-badge">Colossal Statue of Ramses II</span>
-                                        <span class="highlight-badge">52-foot Waziri Papyrus</span>
+                    <a href="detail.html?destination=grand-egyptian-museum" class="main-destination-link">
+                        <div class="main-destination-card" data-card-key="grand-egyptian-museum">
+                            <div class="main-badge">⭐ MAIN EVENT</div>
+                            <div class="row g-0">
+                                <div class="col-lg-6">
+                                    <img src="../../assets/destinations/grand-egyptian-museum.jpg"
+                                        alt="Grand Egyptian Museum" class="main-card-img">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="main-card-body">
+                                        <h3 class="main-title">Grand Egyptian Museum</h3>
+                                        <p class="main-subtitle"><strong>World's Largest Archaeological Museum</strong> |
+                                            Giza, Egypt</p>
+                                        <p class="main-description">Experience the magnificent Grand Egyptian Museum, the
+                                            world's largest museum dedicated to a single civilization. Located near the
+                                            Pyramids of Giza, this architectural marvel houses over 100,000 artifacts,
+                                            including the complete collection from King Tutankhamun's tomb. Discover Egypt's
+                                            rich history spanning from the Predynastic Period to the Roman era.</p>
+                                        <div class="main-highlights">
+                                            <span class="highlight-badge">King Tutankhamun Collection</span>
+                                            <span class="highlight-badge">100,000+ Artifacts</span>
+                                            <span class="highlight-badge">Colossal Statue of Ramses II</span>
+                                            <span class="highlight-badge">52-foot Waziri Papyrus</span>
+                                        </div>
+                                        <span class="btn btn-main">Explore Museum</span>
                                     </div>
-                                    <a href="https://visit-gem.com/en/home" class="btn btn-main" target="_blank">Explore
-                                        Museum</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
             <div class="row g-4">
                 <!-- Cairo -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="../../assets/destinations/cairo-destination.jpg" alt="Cairo" class="card-img">
-                        <div class="card-body">
-                            <h3>Cairo</h3>
-                            <p class="destination-info"><strong>Capital City</strong> | 50+ Attractions</p>
-                            <p>The bustling capital of Egypt, home to ancient pyramids, vibrant markets, and rich
-                                Islamic heritage. Explore the Egyptian Museum, Khan el-Khalili bazaar, and historic
-                                mosques.</p>
-                            <ul class="highlights">
-                                <li>Pyramids of Giza</li>
-                                <li>Egyptian Museum</li>
-                                <li>Islamic Cairo</li>
-                                <li>Khan el-Khalili</li>
-                            </ul>
+                    <a href="detail.html?destination=cairo" class="destination-card-link">
+                        <div class="destination-card" data-card-key="cairo">
+                            <img src="../../assets/destinations/cairo-destination.jpg" alt="Cairo" class="card-img">
+                            <div class="card-body">
+                                <h3>Cairo</h3>
+                                <p class="destination-info"><strong>Capital City</strong> | 50+ Attractions</p>
+                                <p>The bustling capital of Egypt, home to ancient pyramids, vibrant markets, and rich
+                                    Islamic heritage. Explore the Egyptian Museum, Khan el-Khalili bazaar, and historic
+                                    mosques.</p>
+                                <ul class="highlights">
+                                    <li>Pyramids of Giza</li>
+                                    <li>Egyptian Museum</li>
+                                    <li>Islamic Cairo</li>
+                                    <li>Khan el-Khalili</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Luxor -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="../../assets/destinations/luxor-destination.jpg" alt="Luxor" class="card-img">
-                        <div class="card-body">
-                            <h3>Luxor</h3>
-                            <p class="destination-info"><strong>Ancient Thebes</strong> | 40+ Attractions</p>
-                            <p>Known as the world's greatest open-air museum, Luxor is home to magnificent temples,
-                                royal tombs, and ancient monuments that tell the story of pharaonic Egypt.</p>
-                            <ul class="highlights">
-                                <li>Valley of the Kings</li>
-                                <li>Karnak Temple</li>
-                                <li>Luxor Temple</li>
-                                <li>Temple of Hatshepsut</li>
-                            </ul>
+                    <a href="detail.html?destination=luxor" class="destination-card-link">
+                        <div class="destination-card" data-card-key="luxor">
+                            <img src="../../assets/destinations/luxor-destination.jpg" alt="Luxor" class="card-img">
+                            <div class="card-body">
+                                <h3>Luxor</h3>
+                                <p class="destination-info"><strong>Ancient Thebes</strong> | 40+ Attractions</p>
+                                <p>Known as the world's greatest open-air museum, Luxor is home to magnificent temples,
+                                    royal tombs, and ancient monuments that tell the story of pharaonic Egypt.</p>
+                                <ul class="highlights">
+                                    <li>Valley of the Kings</li>
+                                    <li>Karnak Temple</li>
+                                    <li>Luxor Temple</li>
+                                    <li>Temple of Hatshepsut</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Aswan -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="../../assets/destinations/aswan-destination.jpg" alt="Aswan" class="card-img">
-                        <div class="card-body">
-                            <h3>Aswan</h3>
-                            <p class="destination-info"><strong>Nubian City</strong> | 25+ Attractions</p>
-                            <p>A peaceful city on the Nile with stunning natural beauty, Nubian culture, and remarkable
-                                temples including Abu Simbel and Philae Temple.</p>
-                            <ul class="highlights">
-                                <li>Abu Simbel Temples</li>
-                                <li>Philae Temple</li>
-                                <li>Nubian Villages</li>
-                                <li>High Dam</li>
-                            </ul>
+                    <a href="detail.html?destination=aswan" class="destination-card-link">
+                        <div class="destination-card" data-card-key="aswan">
+                            <img src="../../assets/destinations/aswan-destination.jpg" alt="Aswan" class="card-img">
+                            <div class="card-body">
+                                <h3>Aswan</h3>
+                                <p class="destination-info"><strong>Nubian City</strong> | 25+ Attractions</p>
+                                <p>A peaceful city on the Nile with stunning natural beauty, Nubian culture, and remarkable
+                                    temples including Abu Simbel and Philae Temple.</p>
+                                <ul class="highlights">
+                                    <li>Abu Simbel Temples</li>
+                                    <li>Philae Temple</li>
+                                    <li>Nubian Villages</li>
+                                    <li>High Dam</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Alexandria -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="../../assets/destinations/alexandria-destination.jpg" alt="Alexandria"
-                            class="card-img">
-                        <div class="card-body">
-                            <h3>Alexandria</h3>
-                            <p class="destination-info"><strong>Mediterranean Pearl</strong> | 30+ Attractions</p>
-                            <p>Egypt's second-largest city, a Mediterranean gem with Greco-Roman history, beautiful
-                                coastlines, and the legendary Library of Alexandria.</p>
-                            <ul class="highlights">
-                                <li>Qaitbay Citadel</li>
-                                <li>Bibliotheca Alexandrina</li>
-                                <li>Catacombs of Kom el Shoqafa</li>
-                                <li>Montaza Palace</li>
-                            </ul>
+                    <a href="detail.html?destination=alexandria" class="destination-card-link">
+                        <div class="destination-card" data-card-key="alexandria">
+                            <img src="../../assets/destinations/alexandria-destination.jpg" alt="Alexandria"
+                                class="card-img">
+                            <div class="card-body">
+                                <h3>Alexandria</h3>
+                                <p class="destination-info"><strong>Mediterranean Pearl</strong> | 30+ Attractions</p>
+                                <p>Egypt's second-largest city, a Mediterranean gem with Greco-Roman history, beautiful
+                                    coastlines, and the legendary Library of Alexandria.</p>
+                                <ul class="highlights">
+                                    <li>Qaitbay Citadel</li>
+                                    <li>Bibliotheca Alexandrina</li>
+                                    <li>Catacombs of Kom el Shoqafa</li>
+                                    <li>Montaza Palace</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Red Sea -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="../../assets/destinations/redsea-destination.jpg" alt="Red Sea" class="card-img">
-                        <div class="card-body">
-                            <h3>Red Sea</h3>
-                            <p class="destination-info"><strong>Diving Paradise</strong> | 20+ Attractions</p>
-                            <p>World-renowned for its crystal-clear waters, vibrant coral reefs, and exceptional diving
-                                and snorkeling opportunities. Perfect for beach lovers and water sports enthusiasts.</p>
-                            <ul class="highlights">
-                                <li>Sharm el-Sheikh</li>
-                                <li>Hurghada</li>
-                                <li>Dahab</li>
-                                <li>Coral Reefs</li>
-                            </ul>
+                    <a href="detail.html?destination=redsea" class="destination-card-link">
+                        <div class="destination-card" data-card-key="redsea">
+                            <img src="../../assets/destinations/redsea-destination.jpg" alt="Red Sea" class="card-img">
+                            <div class="card-body">
+                                <h3>Red Sea</h3>
+                                <p class="destination-info"><strong>Diving Paradise</strong> | 20+ Attractions</p>
+                                <p>World-renowned for its crystal-clear waters, vibrant coral reefs, and exceptional diving
+                                    and snorkeling opportunities. Perfect for beach lovers and water sports enthusiasts.</p>
+                                <ul class="highlights">
+                                    <li>Sharm el-Sheikh</li>
+                                    <li>Hurghada</li>
+                                    <li>Dahab</li>
+                                    <li>Coral Reefs</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Sinai -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="destination-card">
-                        <img src="../../assets/destinations/sinai-destination.jpg" alt="Sinai Peninsula"
-                            class="card-img">
-                        <div class="card-body">
-                            <h3>Sinai Peninsula</h3>
-                            <p class="destination-info"><strong>Sacred Mountains</strong> | 15+ Attractions</p>
-                            <p>A land of dramatic desert landscapes, sacred mountains, and Bedouin culture. Home to
-                                Mount Sinai and St. Catherine's Monastery.</p>
-                            <ul class="highlights">
-                                <li>Mount Sinai</li>
-                                <li>St. Catherine's Monastery</li>
-                                <li>Colored Canyon</li>
-                                <li>Bedouin Culture</li>
-                            </ul>
+                    <a href="detail.html?destination=sinai" class="destination-card-link">
+                        <div class="destination-card" data-card-key="sinai">
+                            <img src="../../assets/destinations/sinai-destination.jpg" alt="Sinai Peninsula"
+                                class="card-img">
+                            <div class="card-body">
+                                <h3>Sinai Peninsula</h3>
+                                <p class="destination-info"><strong>Sacred Mountains</strong> | 15+ Attractions</p>
+                                <p>A land of dramatic desert landscapes, sacred mountains, and Bedouin culture. Home to
+                                    Mount Sinai and St. Catherine's Monastery.</p>
+                                <ul class="highlights">
+                                    <li>Mount Sinai</li>
+                                    <li>St. Catherine's Monastery</li>
+                                    <li>Colored Canyon</li>
+                                    <li>Bedouin Culture</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -205,43 +221,58 @@
             <h2 class="section-title">Featured Destinations</h2>
             <div class="row g-4">
                 <div class="col-lg-6">
-                    <div class="featured-card">
-                        <img src="../../assets/destinations/giza-destination.jpg" alt="Giza Plateau"
-                            class="featured-img">
-                        <div class="featured-content">
-                            <h3>Giza Plateau</h3>
-                            <p>Stand in awe before the last remaining wonder of the ancient world. The Great Pyramid of
-                                Giza, the Sphinx, and the surrounding complex represent the pinnacle of ancient Egyptian
-                                engineering and artistry.</p>
-                            <!-- <a href="#" class="btn btn-primary">Explore Giza</a> -->
+                    <a href="detail.html?destination=giza-plateau" class="featured-card-link">
+                        <div class="featured-card" data-card-key="giza-plateau">
+                            <img src="../../assets/destinations/giza-destination.jpg" alt="Giza Plateau"
+                                class="featured-img">
+                            <div class="featured-content">
+                                <h3>Giza Plateau</h3>
+                                <p>Stand in awe before the last remaining wonder of the ancient world. The Great Pyramid of
+                                    Giza, the Sphinx, and the surrounding complex represent the pinnacle of ancient Egyptian
+                                    engineering and artistry.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-6">
-                    <div class="featured-card">
-                        <img src="../../assets/destinations/nile-destination.jpg" alt="Nile River" class="featured-img">
-                        <div class="featured-content">
-                            <h3>Nile River</h3>
-                            <p>Experience Egypt from the lifeblood of the nation. Cruise along the Nile to witness
-                                ancient temples, traditional villages, and breathtaking landscapes that have inspired
-                                travelers for millennia.</p>
-                            <!-- <a href="#" class="btn btn-primary">Nile Cruises</a> -->
+                    <a href="detail.html?destination=nile-river" class="featured-card-link">
+                        <div class="featured-card" data-card-key="nile-river">
+                            <img src="../../assets/destinations/nile-destination.jpg" alt="Nile River" class="featured-img">
+                            <div class="featured-content">
+                                <h3>Nile River</h3>
+                                <p>Experience Egypt from the lifeblood of the nation. Cruise along the Nile to witness
+                                    ancient temples, traditional villages, and breathtaking landscapes that have inspired
+                                    travelers for millennia.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-  <footer>
-    <div class="footer-grid">
-      <div><h3>Explore-Egypt</h3><p>Your gateway to exploring Egypt.</p></div>
-      <div><h3>Quick Links</h3><a href="../../index.html">Home</a><a href="destinations.html">Destinations</a><a href="../attractions/attractions.html">Attractions</a></div>
-      <div><h3>Destinations</h3><a href="#">Cairo</a><a href="#">Luxor</a><a href="#">Aswan</a></div>
-      <div><h3>Contact</h3><p>Email: info@egypt.com</p><p>Phone: +20 123 456 789</p></div>
-    </div>
-    <div class="copyright">© 2025 Discover Egypt. All Rights Reserved.</div>
-  </footer>
+    <!-- Use the same footer as index.html -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Explore-Egypt</h3>
+                <p>Your gateway to exploring Egypt.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3><a href="../../index.html">Home</a><a href="destinations.html">Destinations</a><a
+                    href="../attractions/attractions.html">Attractions</a>
+            </div>
+            <div>
+                <h3>Destinations</h3><a href="#cairo">Cairo</a><a href="#luxor">Luxor</a><a href="#aswan">Aswan</a>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@egypt.com</p>
+                <p>Phone: +20 123 456 789</p>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Discover Egypt. All Rights Reserved.</div>
+    </footer>
 
 </body>
 
