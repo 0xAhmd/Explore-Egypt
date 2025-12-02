@@ -12,44 +12,39 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--gray);
     background-color: var(--light);
 }
 
-/* Navigation */
-nav {
-    background-color: var(--dark-green);
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-nav ul {
-    list-style: none;
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Cairo_and_Alexandria%2C_Egypt_at_Night_%28NASA%2C_International_Space_Station_Science%2C_10_28_10%29_%2812868402644%29.jpg/960px-Cairo_and_Alexandria%2C_Egypt_at_Night_%28NASA%2C_International_Space_Station_Science%2C_10_28_10%29_%2812868402644%29.jpg?20180512032221') center/cover no-repeat;
+    height: 70vh;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 0 2rem;
+    align-items: center;
+    padding: 0 5%;
+    color: #fff;
+    position: relative;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    padding: 0.5rem 1rem;
+.hero-content {
+    max-width: 550px;
 }
 
-nav a:hover {
-    color: var(--light);
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
 }
 
-
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
 
 /* Main Container */
 .container {
@@ -121,6 +116,7 @@ section h2 {
 
 .tip-card ul {
     list-style: none;
+    padding: 0;
 }
 
 .tip-card li {
@@ -207,76 +203,18 @@ section h2 {
     margin-top: 1rem;
 }
 
-/* Footer */
-footer {
-    background: #111;
-    color: #ddd;
-    padding: 60px 5% 20px;
-}
-
-footer h3 {
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-}
-
-footer a {
-    color: #ddd;
-    display: block;
-    margin-bottom: 8px;
-    font-size: 14px;
-}
-
-.copyright {
-    text-align: center;
-    border-top: 1px solid #333;
-    margin-top: 40px;
-    padding-top: 15px;
-    font-size: 14px;
-}
-
-    /* Header */
-    header {
-      padding: 15px 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #eee;
-    }
-
-    header .logo {
-      font-size: 24px;
-      font-weight: 700;
-      color: var(--green);
-      text-decoration: none;
-    }
-
-    header nav a {
-      margin: 0 12px;
-      color: #333;
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    header nav a:hover {
-      color: var(--green);
-      text-decoration: none;
-    }
-
-    header .search {
-      font-size: 20px;
-      cursor: pointer;
-      color: var(--green);
-    }
 /* Responsive Design */
 @media (max-width: 768px) {
-    .header-content h1 {
-        font-size: 2rem;
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
     }
 
     .container {
@@ -292,34 +230,37 @@ footer a {
         grid-template-columns: 1fr;
     }
 
-    nav ul {
-        gap: 1rem;
-    }
-
     .map-container {
         height: 400px;
     }
 }
 
 @media (max-width: 480px) {
-    header {
-        padding: 3rem 1rem;
+    .hero {
+        height: 40vh;
     }
 
-    .header-content h1 {
-        font-size: 1.6rem;
+    .hero h1 {
+        font-size: 28px;
     }
 
-    .header-content p {
-        font-size: 1rem;
+    .hero p {
+        font-size: 14px;
     }
 
-    nav ul {
-        gap: 0.5rem;
+    .container {
+        padding: 1.5rem 1rem;
     }
 
-    nav a {
-        padding: 0.5rem;
-        font-size: 0.9rem;
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    .tip-card {
+        padding: 1.5rem;
+    }
+
+    .hotel-content {
+        padding: 1.2rem;
     }
 }
