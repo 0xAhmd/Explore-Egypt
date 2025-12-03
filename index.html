@@ -5,16 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discover Egypt</title>
-  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-
-
   <!-- Header -->
   <header>
     <a href="index.html" class="logo">Discover Egypt</a>
@@ -34,10 +32,7 @@
     <div class="hero-content">
       <h1>Experience the Magic of Egypt</h1>
       <p>Explore ancient wonders, vibrant cities, and breathtaking landscapes.</p>
-
     </div>
-
-
   </div>
 
   <!-- Stats Bar -->
@@ -49,88 +44,211 @@
   </div>
 
   <!-- Popular Destinations -->
-  <section>
-    <h2>Popular Destinations</h2>
+  <section id="destinations">
+    <div class="section-header">
+      <h2>Popular Destinations</h2>
+      <a href="pages/destinations/destinations.html" class="btn btn-primary">View All Destinations</a>
+    </div>
     <div class="grid grid-6">
-      <div class="card" data-card-key="cairo"><img
-          src="https://images.unsplash.com/photo-1710211288826-b7df3ab71588?q=80&w=964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1710211288826-b7df3ab71588?q=80&w=964&auto=format&fit=crop" alt="Cairo">
         <div class="card-body">
           <h4>Cairo</h4>
           <p>50+ attractions</p>
         </div>
       </div>
-      <div class="card" data-card-key="luxor"><img
-          src="https://images.unsplash.com/photo-1587975844610-40f1ad10d07e?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587975844610-40f1ad10d07e?q=80&w=871&auto=format&fit=crop" alt="Luxor">
         <div class="card-body">
           <h4>Luxor</h4>
           <p>40+ attractions</p>
         </div>
       </div>
-      <div class="card" data-card-key="aswan"><img
-          src="https://images.unsplash.com/photo-1644517270263-4112379d97ca?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1644517270263-4112379d97ca?q=80&w=870&auto=format&fit=crop" alt="Aswan">
         <div class="card-body">
           <h4>Aswan</h4>
           <p>25+ attractions</p>
         </div>
       </div>
-      <div class="card" data-card-key="redsea"><img
-          src="https://images.unsplash.com/photo-1568575621216-ca74d9a8c687?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1568575621216-ca74d9a8c687?q=80&w=774&auto=format&fit=crop" alt="Red Sea">
         <div class="card-body">
           <h4>Red Sea</h4>
           <p>20+ attractions</p>
         </div>
       </div>
-      <div class="card" data-card-key="sinai"><img
-          src="https://images.unsplash.com/photo-1661270288617-f3168c7a18be?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1661270288617-f3168c7a18be?q=80&w=870&auto=format&fit=crop" alt="Sinai">
         <div class="card-body">
           <h4>Sinai</h4>
           <p>15+ attractions</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800&auto=format&fit=crop" alt="Alexandria">
+        <div class="card-body">
+          <h4>Alexandria</h4>
+          <p>30+ attractions</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Must-See Attractions -->
-  <section>
-    <h2>Must-See Attractions</h2>
+  <section id="attractions" style="background: var(--light);">
+    <div class="section-header">
+      <h2>Must-See Attractions</h2>
+      <a href="pages/attractions/attractions.html" class="btn btn-primary">Explore All Attractions</a>
+    </div>
     <div class="grid grid-4">
-      <div class="card" style="grid-column:span 2;" data-card-key="pyramids-giza">
-        <img
-          src="https://images.unsplash.com/photo-1541769740-098e80269166?q=80&w=794&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card" style="grid-column:span 2;">
+        <img src="https://images.unsplash.com/photo-1541769740-098e80269166?q=80&w=794&auto=format&fit=crop" alt="Pyramids of Giza">
         <div class="card-body">
           <h3>Pyramids of Giza</h3>
         </div>
       </div>
-      <div class="card" data-card-key="karnak-temple"><img
-          src="https://images.unsplash.com/photo-1663601896596-ee0f9daac04c?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1663601896596-ee0f9daac04c?q=80&w=1032&auto=format&fit=crop" alt="Karnak Temple">
         <div class="card-body">Karnak Temple</div>
       </div>
-      <div class="card" data-card-key="edfu-temple"><img
-          src="https://images.unsplash.com/photo-1557640047-75c97a5f1ea4?q=80&w=895&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-        <div class="card-body">Edfu Temple
-        </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1557640047-75c97a5f1ea4?q=80&w=895&auto=format&fit=crop" alt="Edfu Temple">
+        <div class="card-body">Edfu Temple</div>
       </div>
-      <div class="card" data-card-key="al-azhar-mosque"><img
-          src="https://images.unsplash.com/photo-1760973519064-fc146406c871?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1760973519064-fc146406c871?q=80&w=870&auto=format&fit=crop" alt="Al-Azhar Mosque">
         <div class="card-body">Al-Azhar Mosque</div>
       </div>
     </div>
   </section>
 
   <!-- Experience Egypt -->
-  <section>
-    <h2>Experience Egypt</h2>
+  <section id="experiences">
+    <div class="section-header">
+      <h2>Experience Egypt</h2>
+      <a href="pages/Experience/experience.html" class="btn btn-primary">Discover Experiences</a>
+    </div>
     <div class="grid grid-3">
-      <div class="card" data-card-key="egyptian-cuisine"><img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutwoFAMGiBYYudVaVljI_EJWD6Njbiil3AsA520cEIspyPs7y8ZnjxVe3uP-BN_KBZIMoJg&s=10">
-        <div class="card-body">Egyptian Cuisine</div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=800&auto=format&fit=crop" alt="Egyptian Cuisine">
+        <div class="card-body">
+          <h4>Egyptian Cuisine</h4>
+          <p>Savor the flavors of Egypt</p>
+        </div>
       </div>
-      <div class="card" data-card-key="traditions-culture"><img
-          src="https://unitedguidestravel.com/wp-content/uploads/2023/03/ramadan-in-egypt-celebrations-800x500.jpg">
-        <div class="card-body">Traditions & Culture</div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1578895101408-1a36b834405b?q=80&w=800&auto=format&fit=crop" alt="Traditions & Culture">
+        <div class="card-body">
+          <h4>Traditions & Culture</h4>
+          <p>Experience authentic Egyptian life</p>
+        </div>
       </div>
-      <div class="card" data-card-key="events-festivals"><img src="https://www.egypttoday.com/siteimages/Larg/20251102125800580.jpg">
-        <div class="card-body">Events & Festivals</div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=800&auto=format&fit=crop" alt="Events & Festivals">
+        <div class="card-body">
+          <h4>Events & Festivals</h4>
+          <p>Celebrate with locals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Egypt -->
+  <section id="about" style="background: var(--light);">
+    <div class="section-header">
+      <h2>About Egypt</h2>
+      <a href="pages/about-egypt/About.html" class="btn btn-primary">Learn More</a>
+    </div>
+    <div class="about-preview">
+      <div class="about-content">
+        <h3>7000 Years of Rich History</h3>
+        <p>Egypt is a land where ancient civilization meets modern culture. From the pharaonic era to Islamic heritage, discover the fascinating history, diverse geography, and vibrant culture that make Egypt a unique destination.</p>
+        <div class="about-highlights">
+          <div class="about-item">
+            <h4>History & Timeline</h4>
+            <p>Journey through millennia of civilization</p>
+          </div>
+          <div class="about-item">
+            <h4>Geography & Climate</h4>
+            <p>From the Nile to vast deserts and coastlines</p>
+          </div>
+          <div class="about-item">
+            <h4>Culture & Identity</h4>
+            <p>Living traditions and modern voices</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?q=80&w=1000&auto=format&fit=crop" alt="Egyptian Culture">
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section id="resources">
+    <div class="section-header">
+      <h2>Travel Resources</h2>
+      <a href="pages/resources/resources.html" class="btn btn-primary">View All Resources</a>
+    </div>
+    <div class="grid grid-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=800&auto=format&fit=crop" alt="Interactive Map">
+        <div class="card-body">
+          <h4>Interactive Map</h4>
+          <p>Explore Egypt's destinations</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=800&auto=format&fit=crop" alt="Travel Tips">
+        <div class="card-body">
+          <h4>Travel Tips</h4>
+          <p>Essential advice for travelers</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop" alt="Hotels">
+        <div class="card-body">
+          <h4>Featured Hotels</h4>
+          <p>Find perfect accommodation</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1569163139394-de4798aa62b6?q=80&w=800&auto=format&fit=crop" alt="Transportation">
+        <div class="card-body">
+          <h4>Transportation</h4>
+          <p>Getting around Egypt</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Information & Contact -->
+  <section id="contact" style="background: var(--light);">
+    <div class="section-header">
+      <h2>Information & Support</h2>
+      <a href="pages/information/information.html" class="btn btn-primary">Get Information</a>
+    </div>
+    <div class="info-preview">
+      <div class="info-card-large">
+        <h3>Essential Travel Information</h3>
+        <p>Get all the details you need for a smooth and enjoyable trip to Egypt. From visa requirements to local customs, we've got you covered.</p>
+        <ul class="info-list">
+          <li>Visa & Entry Requirements</li>
+          <li>Currency & Money Exchange</li>
+          <li>Health & Safety Guidelines</li>
+          <li>Frequently Asked Questions</li>
+        </ul>
+      </div>
+      <div class="info-card-large">
+        <h3>Contact & Support</h3>
+        <p>Have questions? Our team is here to help you plan your perfect Egyptian adventure.</p>
+        <div class="contact-details">
+          <p><strong>Email:</strong> info@discoveregypt.com</p>
+          <p><strong>Phone:</strong> +20 123 456 789</p>
+          <p><strong>Hours:</strong> 9:00 AM - 6:00 PM (EET)</p>
+        </div>
+        <a href="pages/information/information.html#contact-form" class="btn btn-primary" style="margin-top: 15px; display: inline-block;">Contact Us</a>
       </div>
     </div>
   </section>
@@ -139,26 +257,31 @@
   <footer>
     <div class="footer-grid">
       <div>
-        <h3>Explore-Egypt</h3>
+        <h3>Discover Egypt</h3>
         <p>Your gateway to exploring Egypt.</p>
       </div>
       <div>
-        <h3>Quick Links</h3><a href="index.html">Home</a><a
-          href="pages/destinations/destinations.html">Destinations</a><a
-          href="pages/attractions/attractions.html">Attractions</a>
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#attractions">Attractions</a>
+        <a href="#experiences">Experiences</a>
       </div>
       <div>
-        <h3>Destinations</h3><a href="#">Cairo</a><a href="#">Luxor</a><a href="#">Aswan</a>
+        <h3>Destinations</h3>
+        <a href="#">Cairo</a>
+        <a href="#">Luxor</a>
+        <a href="#">Aswan</a>
+        <a href="#">Red Sea</a>
       </div>
       <div>
         <h3>Contact</h3>
-        <p>Email: info@egypt.com</p>
+        <p>Email: info@discoveregypt.com</p>
         <p>Phone: +20 123 456 789</p>
       </div>
     </div>
     <div class="copyright">© 2025 Discover Egypt. All Rights Reserved.</div>
   </footer>
-
 </body>
 
 </html>
